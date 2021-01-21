@@ -40,6 +40,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
   .hero {    
     text-align: center;
     background-image: url('https://cdn.auth0.com/blog/vue-meetup/event-banner.png');

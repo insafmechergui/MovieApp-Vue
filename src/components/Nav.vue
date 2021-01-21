@@ -1,6 +1,7 @@
 <template>
+<section class="section">
 
-<nav class="navbar " role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand ">
     <a class="navbar-item" href="/">
         <img src="https://www.logolynx.com/images/logolynx/25/2555b0799248332846cdab5d8efacf68.jpeg" alt="" width="70" >
@@ -44,6 +45,8 @@
         </div>
     </div>
 </nav>
+</section>
+
 </template>
 <script>
 export default {
@@ -80,8 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 <style lang="scss" scoped>
+  .section{
+    padding-top:1px!important
+  }
   nav {
-   
+
     a {
     font-weight: bold;
     color: #2c504d;

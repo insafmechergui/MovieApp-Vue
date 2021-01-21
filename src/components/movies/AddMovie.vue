@@ -1,10 +1,25 @@
 <template>
     <div class="addMovie">
-    <h1 class="title">Add movie</h1>
+        <h1 class="title">Add movie</h1>
         <div class="field">
             <label class="label">Title</label>
             <div class="control">
                 <input class="input" type="text" placeholder="Title">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Plot</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Plot">
+            </div>
+        </div>
+       <div class="field">
+            <label class="label">Poster</label>
+            <div class="control">
+                <input type="file" accept="image/*" @change="onChange" />
+                <div id="preview">
+                    <img v-if="item.imageUrl" :src="item.imageUrl" />
+                </div>
             </div>
         </div>
         <div class="field">
@@ -20,22 +35,24 @@
                 </div>
             </div>
         </div>
-       <div class="field">
-            <label class="label">Poster</label>
-            <div class="control">
-                <input type="file" accept="image/*" @change="onChange" />
-                <div id="preview">
-                    <img v-if="item.imageUrl" :src="item.imageUrl" />
-                </div>
-            </div>
-        </div>
-        
         <div class="field">
             <label class="label">Year</label>
             <div class="control">
-                <input class="input" type="number" >
+                <input class="input" type="number"  placeholder="Year" >
+            </div>
+        </div> 
+        <div class="field">
+            <label class="label">Runtime by minute</label>
+            <div class="control">
+                <input class="input" type="number" placeholder="Runtime"> 
             </div>
         </div>        
+        <div class="field">
+            <label class="label">Trailer</label>
+            <div class="control">
+                <input type="file"/>           
+            </div>
+        </div>
        
         <div class="field is-grouped">
             <div class="control">
@@ -70,6 +87,17 @@
      } 
 </script>
 <style>
+
+.addMovie{
+    padding-top:3vh;
+    background-image: url('https://mewallpaper.com/thumbnail/movies/3201-iron-man-3-movie-hd-image-free-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+ h1,label{
+    color:white !important;
+}
 .field{
     width:50%;
     margin:auto;

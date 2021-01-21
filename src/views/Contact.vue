@@ -1,7 +1,7 @@
 <template>
-  <div class="contact container">
+  <div class="contact ">
     <h1 class="title">Contact Us</h1>
-    <div id="contactUs" class="container">
+    
         <div class="field">
             <label class="label">Username</label>
             <div class="control has-icons-left has-icons-right">
@@ -43,18 +43,19 @@
         <div class="control">
             <button class="button is-link is-light">Cancel</button>
         </div>
-        </div>
+        
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-    div .contact{
-      background-image:url('https://d-tm.ppstatic.pl/kadry/e0/c5/fd5763246e6d16523597d0d8202f.1000.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position:center;
-      height:92vh;
-      width:200vh;
+
+    .contact{
+        padding-top:3vh;
+        height:100vh;
+        background-image: url('https://ak.picdn.net/shutterstock/videos/2900722/thumb/1.jpg?i10c=img.resize(height:240)');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     h1,label{
         color:white;
