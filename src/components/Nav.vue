@@ -14,8 +14,7 @@
     </a>
   </div>
     <div id="navbarBasicExample" class="navbar-menu is-active">
-        <div class="navbar-start">
-            <router-link to="/" class="navbar-item">Home</router-link>
+        <div class="navbar-start">           
             <router-link to="/allMovies" class="navbar-item">All movies</router-link>
             <router-link to="/addMovie" class="navbar-item">Add movie</router-link>
 
