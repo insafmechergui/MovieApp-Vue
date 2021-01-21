@@ -34,12 +34,11 @@
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign Up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Sign In
-                    </a>
+                    
+                    <strong><router-link to="/signUp" class="navbar-item button is-primary">Sign Up</router-link></strong>
+                   
+                    <strong><router-link to="/signIn" class="navbar-item button is-light">Sign In</router-link></strong>
+                  
                 </div>
             </div>
         </div>
@@ -89,11 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
   nav {
 
     a {
-    font-weight: bold;
-    color: #2c504d;
+      font-weight: bold;
+      color: #2c504d;
 
-    &.router-link-exact-active {
-      color: #42b983;
+      &.router-link-exact-active {
+        color: #42b983;
+      
         }
     }
     a:hover, &.router-link:hover {

@@ -5,6 +5,9 @@ import Contact from "../views/Contact.vue";
 import Home from "../views/Home.vue";
 import AllMovies from "../components/movies/AllMovies.vue";
 import AddMovie from "../components/movies/AddMovie.vue";
+import SignUp from "../components/authentication/SignUp.vue";
+import SignIn from "../components/authentication/SignIn.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -38,6 +41,16 @@ const routes = [
     path: "/addMovie",
     name: "addMovie",
     component: AddMovie,
+  },
+  {
+    path: "/signUp",
+    name: "signUp",
+    component: SignUp,
+  },
+  {
+    path: "/signIn",
+    name: "signIn",
+    component: SignIn,
   },
 ];
 

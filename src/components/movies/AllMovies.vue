@@ -52,17 +52,12 @@
 </template>
 <style>
 .card-image .image img {
-  max-height:700px;
-  position :absolute
+  max-height:65vh;
    
 }
 .card{
-    height:95vh;
     margin-right:auto;
     margin-left:auto;
 }
-.card-content{
-    position:relative;
-    bottom:-50%
-}
+
 </style>
