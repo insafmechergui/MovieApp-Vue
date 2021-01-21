@@ -4,6 +4,7 @@ import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
 import Home from "../views/Home.vue";
 import AllMovies from "../components/movies/AllMovies.vue";
+import AddMovie from "../components/movies/AddMovie.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     path: "/allMovies",
     name: "allMovies",
     component: AllMovies,
+  },
+  {
+    path: "/addMovie",
+    name: "addMovie",
+    component: AddMovie,
   },
 ];
 
