@@ -105,6 +105,6 @@
     text-align:left
 }
 #preview{
-    width:100vh
+    width:120px;
 }
 </style>
