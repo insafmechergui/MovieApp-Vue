@@ -93,13 +93,14 @@
     background-image: url('https://mewallpaper.com/thumbnail/movies/3201-iron-man-3-movie-hd-image-free-wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center;
     height:100vh;
 }
  h1,label{
     color:white !important;
 }
 .field{
-    width:50%;
+    
     margin:auto;
     text-align:left
 }
